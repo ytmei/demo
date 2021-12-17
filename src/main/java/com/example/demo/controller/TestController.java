@@ -17,7 +17,7 @@ public class TestController {
 
     @GetMapping
     public String getUser(){
-        log.info("========测试Logstash日志采集测试========");
+        log.info("========测试Logstash日志采集测试========" + System.currentTimeMillis());
         return "admin";
     }
 }
